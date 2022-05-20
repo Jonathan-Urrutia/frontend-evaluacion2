@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body-contact">
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+        <div class="container-fluid">
+          <a class="navbar-brand name-logo" href="index.html">Reciclear</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item ms-5">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Aprende a reciclar</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Puntos Limpios</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Quienes Somos</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link active" href="formulario.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Form - Aside -->
+      <h3 class="mt-5 text-center">¡Dinos qué quieres reciclar!</h3>
+      <div class="container-fluid mt-3">
+        <div class="row">
+          
+          <!-- Aside image -->
+          <div class="col-sm-12 col-md-6 col-lg-6 text-img p-4">
+            <p class="text-break">Dejanos tus datos y el tipo de residuo a reciclar y te enviaremos información gratuita de cómo hacerlo y los puntos de reciclaje de tu región.</p>
+            <img src="imagenes/form-img.jpg" alt="reciclando" class="img-form">
+          </div>
+
+          <!-- Form -->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <form class="row g-3">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <label for="inputName" class="form-label">Nombre</label>
+                  <input type="Nombre" class="form-control" id="inputName" placeholder="Juan González Rojas" required>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <label for="inputAddress" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Los Alerces #1234" required>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <label for="inputRegion" class="form-label">Región</label>
+                  <select id="inputRegion" class="form-select" required>
+                    <option selected value="">Selecciona tu región</option>
+                    <option value="15">XV Arica y Parinacota</option>
+                    <option value="1">I Tarapacá</option>
+                    <option value="2">II Antofagasta</option>
+                    <option value="3">III Atacama</option>
+                    <option value="4">IV Coquimbo</option>
+                    <option value="5">V Valparaíso</option>
+                    <option value="13">RM Metropolitana</option>
+                    <option value="6">VI Ohiggins</option>
+                    <option value="7">VII Maule</option>
+                    <option value="8">VIII Biobío</option>
+                    <option value="9">IX Araucanía</option>
+                    <option value="14">XIV Los Ríos</option>
+                    <option value="10">X Los Lagos</option>
+                    <option value="11">XI Aysén</option>
+                    <option value="12">XII Magallanes</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="email@direccion.cl" required>
+                </div>
+                <div class="col-xs-12">
+                  <h6>Experiencia</h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioFirst" value="1" required>
+                    <label class="form-check-label" for="inlineRadioFirst">Primera vez reciclando</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioSecond" value="2" required>
+                    <label class="form-check-label" for="inlineRadioSecond">Ya tengo experiencia reciclando</label>
+                  </div>
+                </div>
+                <div class="col-12 my-3">
+                  <h6>Residuo a reciclar</h6>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheckMetal">
+                    <label class="form-check-label" for="gridCheckMetal">
+                      Lata y/o metal
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheckPlastic">
+                    <label class="form-check-label" for="gridCheckPlastic">
+                      Plástico
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheckPaper">
+                    <label class="form-check-label" for="gridCheckPaper">
+                      Papel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheckOther">
+                    <label class="form-check-label" for="gridCheckOther">
+                      Otros
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                  <button type="submit" class="btn btn-green btn-form">Enviar</button>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                  <button type="reset" class="btn btn-transparent btn-form">Borrar datos</button>
+                </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="container-fluid mt-5 p-3 bg-dark">
+        <div class="row p-2">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <ul class="list-contact">
+              <li><a href=""><img src="imagenes/email.svg" alt="" class="me-2 mb-3">contacto@reciclear.cl</a></li>
+              <li><a href=""><img src="imagenes/telephone-svgrepo-com 2.svg" alt="" class="me-2 mb-3">(+56) 9 51235698</a></li>
+              <li><a href=""><img src="imagenes/telephone-svgrepo-com 2.svg" alt="" class="me-2 mb-3">600 600 2236</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <h6 class="text-light">Conceptos básicos del reciclaje</h6>
+            <iframe class="video-footer" src="https://www.youtube.com/embed/YiHTNfKJwAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <h6 class="text-light">Materiales a reciclar</h6>
+            <iframe class="video-footer" src="https://www.youtube.com/embed/A27n5IGU_g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <div class="text-center copyright">
+          <hr>
+          <p>© 2021 Copyright: Reciclear</p>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

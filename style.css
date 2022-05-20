@@ -1,0 +1,117 @@
+/* Global style */
+p {
+    text-align: justify;
+    color: #3a2121;
+}
+
+h3 {
+    color: #5F7464;
+}
+
+body {
+    background-color: #eaeaea43;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar */
+.name-logo {
+    font-weight: bolder;
+}
+
+.navbar-color {
+    background: linear-gradient(to right, #f2f2f2, #eaeaea);
+    
+}
+
+.navbar-color a {
+    color: #000000;
+}
+
+.navbar-color a:hover, .active {
+    color: #000000;
+    background: url(imagenes/hojas-hover.svg) no-repeat;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel img {
+    max-height: 50vh;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.carousel-caption p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Cards */
+.card-first {
+    background: url(imagenes/img-card1.jpg) center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.card-second {
+    background: url(imagenes/img-card2.jpg);
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.card p {
+    color: #FFFFFF;
+}
+
+.btn-green, .btn-transparent:hover {
+    background-color: #56C681;
+    color: #FFFFFF;
+}
+
+.btn-transparent, .btn-green:hover {
+    background-color: transparent;
+    border-color: #56C681;
+}
+
+/* Footer */
+footer {
+    box-shadow: 0 -1.8vh 0 #212529d8
+}
+
+.list-contact a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.list-contact img {
+    width: 5%;
+}
+
+.video-footer {
+    width: 50%;
+    height: 70%;
+}
+
+.copyright hr {
+    color: #FFFFFF;
+}
+
+.copyright p {
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+/* Form - Aside */
+.text-img p {
+    width: 100%;
+}
+
+.img-form {
+    width: 60%;
+    margin-left: 25%;
+}
+
+.btn-form {
+    width: 100%;
+}
